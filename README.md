@@ -8,11 +8,13 @@ AngularJS lib files from angular-seed are packaged into grails-angular-resources
 Currently, I have no plan to create pull-request to the original plugin repo because the angular distribution in current angular-seed is the unstable version.
 So, you need to do the following before running this project:
 
-<code>
+* <code>
 git clone https://github.com/arief-hidayat/grails-angularjs-resource.git
-
+</code>
+* <code>
 cd grails-angularjs-resource
-
+</code>
+* <code>
 grails maven-install
 </code>
 
@@ -21,3 +23,9 @@ I have included rebel.xml in src/java. if you have jrebel. you might want to run
 <code>
 grails -noreloading run-app GRAILS_OPTS="javaagent:C:/jrebel/jrebel.jar"
 </code>
+
+TODO: add more code for testing.
+
+### Note
+
+I'm just starting to learn AngularJS. So, there' might be implementation that's not follow the best practice. Feel free to give feedback and contribute. =)
