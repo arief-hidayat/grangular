@@ -18,7 +18,7 @@ cd grails-angularjs-resource
 grails maven-install
 </code>
 
-I have included rebel.xml in src/java. if you have jrebel. you might want to run grails using the following command:
+I have included rebel.xml in src/java. if you have jrebel, you might want to run grails using the following command (please change the jrebel path accordingly):
 
 <code>
 grails -noreloading run-app GRAILS_OPTS="javaagent:C:/jrebel/jrebel.jar"
@@ -28,4 +28,6 @@ TODO: add more code for testing.
 
 ### Note
 
-I'm just starting to learn AngularJS. So, there' might be implementation that's not follow the best practice. Feel free to give feedback and contribute. =)
+I'm just starting to learn AngularJS. So, perhaps my implementation is not following the best practices or there's better approach.
+
+Feel free to give feedback and contribute. =)
