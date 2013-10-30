@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Grangular
+### Grangular
 
 Grails 2.3.1 + AngularJS 1.2.0-RC3
 
@@ -11,7 +10,9 @@ So, you need to do the following before running this project:
 
 <code>
 git clone https://github.com/arief-hidayat/grails-angularjs-resource.git
+
 cd grails-angularjs-resource
+
 grails maven-install
 </code>
 
