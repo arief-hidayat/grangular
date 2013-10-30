@@ -1,0 +1,4 @@
+grangular
+=========
+
+Grails + AngularJS
