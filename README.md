@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Grangular
 
 Grails 2.3.1 + AngularJS 1.2.0-RC3
