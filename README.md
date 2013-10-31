@@ -1,6 +1,6 @@
 ### Grangular
 
-Grails 2.3.1 + AngularJS 1.2.0-RC3
+Grails 2.3.1 + AngularJS 1.2.0-RC3 (check 'secure' branch for those interested with Grails Spring Security plugin integration)
 
 I copied files from https://github.com/angular/angular-seed
 
