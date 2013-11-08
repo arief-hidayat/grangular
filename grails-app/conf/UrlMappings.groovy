@@ -1,7 +1,7 @@
 class UrlMappings {
 
 	static mappings = {
-        "/secure"(view:"/mock-secure")
+//        "/secure"(view:"/mock-secure")
 
         "/$controller/$action?/$id?(.${format})?"{
             constraints {
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(view:"/mock-secure")
         "500"(view:'/error')
 	}
 }

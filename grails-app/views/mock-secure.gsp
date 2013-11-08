@@ -62,7 +62,7 @@
             </p>
             <hr>
             <br>&nbsp;
-            <h3>Enter some data and submit to send and access public data.</h3>
+            <h3>Enter some data and submit to send and access public API (see DataController#publicData)</h3>
             <form ng-submit="publicAction()">
                 Enter public data:
                 <input type="text" ng-model="publicData">
@@ -73,7 +73,7 @@
             <br/>
             <br/>
 
-            <h3>Enter some data and submit to send and access protected data.</h3>
+            <h3>Enter some data and submit to send and access protected API (see DataController#protectedData).</h3>
             <form ng-submit="restrictedAction()">
                 Enter restricted data:
                 <input type="text" ng-model="restrictedData">
