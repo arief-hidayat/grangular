@@ -97,9 +97,10 @@ environments {
 log4j = {
     // Example of changing the log pattern for the default console appender:
     //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
+    appenders {
+        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+    }
+    debug 'grails.plugin.springsecurity' , 'org.springframework.security'
 
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
@@ -113,3 +114,28 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.hida.acct.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.hida.acct.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.hida.acct.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll'],
+        '/**/partials/**':                      ['permitAll'],
+        '/secure':                         ['permitAll'],
+        '/data/publicData':                         ['permitAll'],
+        '/mock-secure':                         ['permitAll'],
+        '/mock-secure.gsp':                         ['permitAll'],
+        '/view1':                         ['permitAll'],
+        '/view2':                         ['permitAll'],
+        '/data/protectedData':                         ['ROLE_ADMIN'],
+        '/**':                         ['ROLE_ADMIN']
+]
+

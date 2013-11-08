@@ -3,14 +3,15 @@
              xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
 
     <classpath>
-        <dir name="C:/sandbox/__test/grangular/target/classes"/>
+        <dir name="C:/sandbox/grangular/target/classes"/>
+        <dir name="C:/sandbox/grangular/target/work/plugin-classes"/>
     </classpath>
 
     <web>
         <link target="/">
-            <dir name="C:/sandbox/__test/grangular/web-app/js"/>
-            <dir name="C:/sandbox/__test/grangular/web-app/css"/>
-            <dir name="C:/sandbox/__test/grangular/web-app/partials"/>
+            <dir name="C:/sandbox/grangular/web-app/js"/>
+            <dir name="C:/sandbox/grangular/web-app/css"/>
+            <dir name="C:/sandbox/grangular/web-app/partials"/>
         </link>
     </web>
 
