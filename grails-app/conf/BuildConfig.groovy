@@ -69,8 +69,9 @@ grails.project.dependency.resolution = {
         //runtime ":zipped-resources:1.0.1"
         //runtime ":cached-resources:1.1"
         //runtime ":yui-minify-resources:0.1.5"
-        compile ":spring-security-core:2.0.0.1-RC2"
-        compile ":angularjs-resources:1.2.0"
+        compile ":spring-security-core:2.0-RC2"
+        //compile ":spring-security-core:2.0.0.1-RC2"
+        compile ":angularjs-resources:1.2.4"
         compile ":grails-angular-template:0.1.2"
 //        test ":karma-test-runner:0.1.1"
     }
