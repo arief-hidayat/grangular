@@ -9,12 +9,9 @@ Currently, we have added Spring Security into the project. Security is important
 Basically, we used the angular implementation from here https://github.com/witoldsz/angular-http-auth, and replace the angular-mocks with real API provided by Grails, where protected APIs will be secured by Spring security.
 
 I opted to use grails-angularjs-resource plugin to provide the AngularJS libraries. I have made pull request to original grails-angular-resources repo (to update it with latest AngularJS) but the developer has not responded yet.
-I've also make a pull request to original repo of grails-springsecurity-core plugin, but not yet responded.
 
-So, while waiting for those pull requests, you need to clone the following projects and do "grails maven-install" to make it available in your local PC:
-
-* https://github.com/arief-hidayat/grails-angularjs-resource
-* https://github.com/arief-hidayat/grails-spring-security-core/tree/propose
+So, while waiting for those pull requests, you need to clone the following project (https://github.com/arief-hidayat/grails-angularjs-resources)
+and do "grails maven-install" to make it available in your local PC. You might need to run "grails refresh-dependencies" before running maven-install.
 
 Finally, you can run <code>grails run-app</code> and check the following demo url:
 
@@ -26,6 +23,7 @@ Optionally, I have included rebel.xml in src/java. if you have jrebel, you might
 grails -noreloading run-app GRAILS_OPTS="javaagent:C:/jrebel/jrebel.jar"
 </code>
 
+TODO: add more code for testing.
 
 ### Note
 
@@ -33,5 +31,3 @@ I'm just starting to learn AngularJS. So, perhaps my implementation is not follo
 
 Feel free to give feedback and contribute. =)
 
-
-TODO: add more code for testing.
