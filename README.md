@@ -8,10 +8,7 @@ You can refer to 'basic' branch for Grails-angularJS-only integration.
 Currently, we have added Spring Security into the project. Security is important, especially for enterprise.
 Basically, we used the angular implementation from here https://github.com/witoldsz/angular-http-auth, and replace the angular-mocks with real API provided by Grails, where protected APIs will be secured by Spring security.
 
-I opted to use grails-angularjs-resource plugin to provide the AngularJS libraries. I have made pull request to original grails-angular-resources repo (to update it with latest AngularJS) but the developer has not responded yet.
-
-So, while waiting for those pull requests, you need to clone the following project (https://github.com/arief-hidayat/grails-angularjs-resources)
-and do "grails maven-install" to make it available in your local PC. You might need to run "grails refresh-dependencies" before running maven-install.
+I opted to use grails-angularjs-resources plugin to provide the AngularJS libraries. 
 
 Finally, you can run <code>grails run-app</code> and check the following demo url:
 
