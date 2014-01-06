@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/mock-secure")
+        "/"(view:"/secure-bootstrap")
         "500"(view:'/error')
 	}
 }

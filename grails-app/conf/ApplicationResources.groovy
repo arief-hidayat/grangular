@@ -15,4 +15,11 @@ modules = {
         resource url:'js/secure/login.js'
         resource url:'js/secure/content.js'
     }
+    'grangular-secure-bootstrap' {
+        dependsOn 'angular-bootstrap'
+        resource url:'js/angular/http-auth-interceptor.js'
+        resource url:'js/secure/main.js'
+        resource url:'js/secure/login.js'
+        resource url:'js/secure/content.js'
+    }
 }
